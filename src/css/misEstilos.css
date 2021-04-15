@@ -1,3 +1,8 @@
 .bg-dark {
     background-color: #000000!important;
 }
+
+.btnGreen{
+    background-color: #11ec86;
+    border-color: #11ec86;
+}
