@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="../css/bootstrap-css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/misEstilos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <title>Registrarse</title>
 </head>
 <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Tenth navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">
+            <img src="../images/full-logo.png" alt=""  class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+    </nav>
+
+    <!-- Registrarse -->
+    <div class="py-5 text-center" id="divContacto">
+        <img class="d-block mx-auto mb-4" src="src/images/contacto.png" alt="" >
+        <h2 >Registro de paciente</h2>
+    </div>
+
+      <div class="row g-5">
+        <div class="col-4"></div>
+        <div class="col-md-7 col-lg-8">
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="text" class="form-label">Usuario <span class="text-muted"></span></label>
+                <input type="text" class="form-control" id="firstName" placeholder="Nombre de usuario" value="" required>
+                <div class="invalid-feedback">
+                 El nombre es requerido.
+                </div>
+              </div>
+              <div class="col-sm-2"></div>
+              <div class="col-sm-2"></div>
+              <div class="col-6">
+                <label for="email" class="form-label">Email <span class="text-muted"></span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Por favor ingrese un correo valido.
+                </div>
+              </div>
+              <div class="col-sm-2"></div>
+              <div class="col-sm-2"></div>
+              <div class="col-sm-6">
+                <label for="text" class="form-label">Password <span class="text-muted"></span></label>
+                <input type="password" class="form-control" id="firstName" placeholder="Contraseña" value="" required>
+                <div class="invalid-feedback">
+                 El pasword es requerido.
+                </div>
+              </div>     
+              <div class="d-grid  d-md-flex justify-content-md-start" >
+                <button class="w-50 gap-4 btn btn-primary btn-lg btnGreen" type="submit">Registrarse</button>  
+            </div>         
+          </form>    
+        </div>
+      </div>
     
 </body>
 </html>
